@@ -10,6 +10,9 @@ def index():
 @app.route('/register')
 def register():
     return render_template('register.html')
+@app.route('/about')
+def about():
+    return render_template('about.html')
 @app.route('/perform_registration', methods=['post'])
 def perform_registration():
     name = request.form.get('user_ka_naam')
