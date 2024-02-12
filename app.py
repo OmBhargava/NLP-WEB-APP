@@ -92,4 +92,5 @@ def perform_abusedetection():
         return render_template('abusedetection.html', response=result)
     else:
         return redirect('/')
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run()
